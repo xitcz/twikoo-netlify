@@ -1,0 +1,12 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "https://blog.wxiao2.com"
+    Access-Control-Allow-Headers = "Content-Type"
+    Access-Control-Allow-Methods = "GET, POST, PUT, DELETE, OPTIONS"
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/twikoo"
+  status = 200
+  force = true  # 这是关键！必须加上force参数
